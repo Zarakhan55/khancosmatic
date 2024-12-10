@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card with Sliding Feature</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Candal&family=Cedarville+Cursive&family=Ceviche+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Oleo+Script:wght@400;700&family=Playwrite+GB+S:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">GlowingBeauty</div>
+        <div class="hamburger" onclick="toggleNavbar()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="makeup.html">Makeup</a></li>
+                <li><a href="skincare.html">Skincare</a></li>
+                <li><a href="haircare.html">Haircare</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script>
+        function toggleNavbar() {
+            // Selecting the navbar and toggling the 'active' class
+            const navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    
+    <!-- HERO_SECTION -->
+    <section class="search-section">
+        <div class="search-container">
+            <div class="search-text">
+                <!-- <h1>Discover Your Perfect Look</h1> -->
+                <p>Our expert team is ready to help you unlock your true beauty potential. Start your journey by searching for the perfect services tailored just for you.</p>
+            </div>
+            <div class="search-form">
+                <input type="text" placeholder="Search for beauty services..." class="search-input">
+                <button type="submit" class="search-button">Search</button>
+            </div>
+        </div>
+    </section>
+    
+   
+    
+      <!-- About Section -->
+      <section class="about">
+        <div class="content">
+          <h3>About Us</h3>
+          <p>We are a premium cosmetics brand dedicated to enhancing natural beauty with high-quality, cruelty-free, and sustainable products. Our mission is to empower individuals to feel confident and radiant by providing innovative beauty solutions. From skincare to makeup, we are committed to bringing you the best of beauty, naturally.</p>
+          
+          <div class="button">
+            <button>Learn More</button>
+          </div>
+        </div>
+    
+        <div class="img-about">
+          <img src="about.jpg" alt="About our brand image">
+        </div>
+    
+        <div class="social">
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </section>
+    
+          
+   
+
+<!-- CUSTOMER FEEDBAKE -->
+<section>
+    <h1>Customer Feedback</h1>
+    <!-- Swiper container -->
+    <div class="swiper mySwiper container">
+        <div class="swiper-wrapper content">
+            <!-- Swiper slide item 1 -->
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <!-- Profile image -->
+                    <div class="image">
+                        <img src="customer2.jpg" alt="Profile Image 1" />
+                    </div>
+                    <!-- Social media icons -->
+                    <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <!-- Name and profession -->
+                    <div class="name-profession">
+                        <span class="name">Alina jhgon</span>
+                        <span class="profession">Makeup artist</span>
+                    </div>
+                    <!-- Rating -->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper slide item 2 -->
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <!-- Profile image -->
+                    <div class="image">
+                        <img src="castomer2.jpg" alt="Profile Image 2" />
+                    </div>
+                    <!-- Social media icons -->
+                    <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <!-- Name and profession -->
+                    <div class="name-profession">
+                        <span class="name">Emily Jhonson</span>
+                        <span class="profession">MakeUp Enthusiast</span>
+                    </div>
+                    <!-- Rating -->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper slide item 3 -->
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <!-- Profile image -->
+                    <div class="image">
+                        <img src="cotomer3.jpg" alt="Profile Image 3" />
+                    </div>
+                    <!-- Social media icons -->
+                    <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <!-- Name and profession -->
+                    <div class="name-profession">
+                        <span class="name">Zara</span>
+                        <span class="profession">Web Developer</span>
+                    </div>
+                    <!-- Rating -->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper slide item 4 -->
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <!-- Profile image -->
+                    <div class="image">
+                        <img src="cus.jpg" alt="Profile Image 4" />
+                    </div>
+                    <!-- Social media icons -->
+                    <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <!-- Name and profession -->
+                    <div class="name-profession">
+                        <span class="name">Sofia Rao</span>
+                        <span class="profession">Fashion Designer</span>
+                    </div>
+
+
+            <!-- Rating -->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper slide item 5 -->
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <!-- Profile image -->
+                    <div class="image">
+                        <img src="customer5.jpg" alt="Profile Image 5" />
+                    </div>
+                    <!-- Social media icons -->
+                    <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <!-- Name and profession -->
+                    <div class="name-profession">
+                        <span class="name">Aisha Jain</span>
+                        <span class="profession">Teacher</span>
+                    </div>
+                    <!-- Rating -->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper slide item 6 -->
+            <div class="swiper-slide card">
+                <div class="card-content">
+                    <!-- Profile image -->
+                    <div class="image">
+                        <img src="customer6.jpg" alt="Profile Image 6" />
+                    </div>
+                    <!-- Social media icons -->
+                    <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <!-- Name and profession -->
+                    <div class="name-profession">
+                        <span class="name">Alia singh</span>
+                        <span class="profession">Architect</span>
+                    </div>
+                    <!-- Rating -->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</section>
+<!-- Footer -section -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p>we're passionate about bringing you the best and latest makeup and beauty products. Founded in 2024, our mission is to provide a one-stop-shop for all your beauty needs, with a team of experienced and passionate experts dedicated to helping you look and feel your best. With a guarantee of quality and satisfaction, we invite you to explore our website and discover the latest trends and must-haves in the world of makeup and beauty.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook fa-beat"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-beat"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-beat"></i> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/zara-khan-687244302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin fa-beat"></i> Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Makup Website. All Rights Reserved.</p>
+    </div>
+</footer>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        grabCursor: true,
+        loop: true,
+
+        // Pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Next and previous navigation
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+          0: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2
+          },
+          1024: {
+            slidesPerView: 3
+          }
+        }
+      });
+    </script>
+    
+      
+</body>
+</html> 
